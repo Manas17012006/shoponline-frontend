@@ -1,55 +1,110 @@
-.nav{
-    min-height:100vh;
-    display:flex;
-    flex:3;
-    background: linear-gradient(135deg,#9ab7f5,#e9d1ef);
+.nav {
+    min-height: 100vh;
     display: flex;
+    background: linear-gradient(135deg, #9ab7f5, #e9d1ef);
     align-items: center;
     justify-content: center;
-    gap:40px;
+    gap: 40px;
     flex-wrap: wrap;
+    padding: 20px;
 }
-.img
-{
+
+.img {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
-.imgg
-{
-    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.5); 
+
+.imgg {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.5);
 }
-.txt
-{
+
+.txt {
     display: flex;
     gap: 15px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
+    text-align: center;
 }
-.big
-{
+
+.big {
     font-size: 70px;
 }
-.small
-{
+
+.small {
     font-size: 20px;
-    text-align: center;
     color: rgb(56, 56, 56);
 }
-.btn
-{
-    font-size:30px;
-    padding:10px;
+
+.btn {
+    font-size: 30px;
+    padding: 10px 20px;
     color: white;
     background-color: #284de4;
-    border:none;
-    border-radius: 30px;;
+    border: none;
+    border-radius: 30px;
 }
-.btn:hover
-{
+
+.btn:hover {
     cursor: pointer;
     background-color: #003098;
+}
+
+/* ========================= */
+/* 📱 Tablet Responsive */
+/* ========================= */
+@media (max-width: 1024px) {
+    .big {
+        font-size: 50px;
+    }
+
+    .btn {
+        font-size: 24px;
+    }
+
+    .imgg {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .big {
+        font-size: 40px;
+    }
+
+    .small {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 8px 18px;
+    }
+
+    .imgg {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .big {
+        font-size: 32px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .imgg {
+        width: 250px;
+    }
 }
