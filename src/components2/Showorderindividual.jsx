@@ -41,7 +41,7 @@ const Showorderindividual = ({ item }) => {
       <div><strong>Purchaser:</strong> {item.name}</div>
       <div><strong>Email:</strong> {item.email}</div>
       <div><strong>Current Status:</strong> {item.status}</div>
-
+      <div><strong>Order placed on: {item.createdAt}</strong></div>
       {/* ORDER ITEMS */}
       <div className={styles.orderItems}>
         <strong>Order Items:</strong>
