@@ -181,7 +181,7 @@ const Order = () => {
             </label>
           </div>
 
-          <button className={styles.placeOrderBtn} disabled={!agree && !load} onClick={(e)=>handleClick(e)}>
+          <button className={styles.placeOrderBtn} type="submit" disabled={!agree && !load} onClick={(e)=>handleClick(e)}>
             Place Order
           </button>
         </div>
